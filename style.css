@@ -13,9 +13,11 @@
   overflow-x: hidden !important;
 }
 
+html,
 body {
+  width: 100%;
+  overflow-x: hidden;
   background-color: var(--main-light);
-  overflow-x: hidden !important;
 }
 
 .ball {
@@ -55,7 +57,7 @@ body {
 
 .loop-text-container {
   z-index: -1;
-  overflow: hidden;
+  overflow: hidden !important;
   white-space: nowrap;
   font-size: 140px;
   letter-spacing: -7px;
@@ -64,6 +66,7 @@ body {
   color: #1e1e1e;
   opacity: 0.8;
   cursor: default;
+  width: 200vw;
 }
 
 .loop-text-container {
@@ -211,7 +214,6 @@ body {
   justify-content: space-between;
   overflow: hidden;
   align-items: center;
-  margin-bottom: 40px;
 }
 
 .contact-box h2 {
@@ -235,9 +237,9 @@ body {
   justify-content: space-between;
   overflow: hidden;
   align-items: center;
-  margin-bottom: 80px;
   cursor: pointer;
   color: #1e1e1e;
+  margin-bottom: 30px;
 }
 
 .resume-box:hover {
@@ -251,21 +253,18 @@ body {
   font-size: 1rem;
 }
 
-.like-box {
-  margin-left: 95px;
-  margin-top: 50px;
-  font-family: Roboto;
-  font-size: 1.3rem;
-  width: 85%;
-  display: flex;
-  justify-content: flex-start;
-  overflow: hidden;
-  align-items: baseline;
-  margin-bottom: 80px;
-  cursor: pointer;
-}
-
 /* //////////responsive */
+
+@media screen and (max-width: 1300px) {
+  .loop-text-container {
+    top: 35%;
+  }
+}
+@media screen and (max-width: 1070px) {
+  .loop-text-container {
+    top: 29%;
+  }
+}
 
 @media screen and (max-width: 1023px) {
   .loop-text-container {
@@ -279,7 +278,7 @@ body {
 
   #social {
     width: 50vw;
-    margin-left: 60px;
+    margin-left: 65px;
   }
 
   .projects-box {
@@ -360,7 +359,7 @@ body {
 
 @media screen and (max-width: 720px) {
   .loop-text-container {
-    top: 35%;
+    top: 23%;
   }
 }
 
@@ -430,7 +429,7 @@ body {
 @media screen and (max-width: 520px) {
   .loop-text-container {
     font-size: 90px;
-    top: 33%;
+    top: 23%;
   }
   #intro-text {
     font-size: 1.2rem;
@@ -459,7 +458,7 @@ body {
 @media screen and (max-width: 500px) {
   .loop-text-container {
     font-size: 90px;
-    top: 33%;
+    top: 23%;
   }
   #intro-text {
     font-size: 1.2rem;
@@ -488,7 +487,7 @@ body {
 @media screen and (max-width: 470px) {
   .loop-text-container {
     font-size: 70px;
-    top: 28%;
+    top: 20%;
   }
   #intro-text {
     font-size: 1.1rem;
@@ -545,82 +544,10 @@ body {
   }
 }
 
-@media screen and (max-width: 470px) {
+@media screen and (max-width: 400px) {
   .loop-text-container {
     font-size: 35px;
-    top: 4%;
-    letter-spacing: 0.2px;
-  }
-  #intro-text {
-    font-size: 0.9rem;
-    margin-top: 14%;
-  }
-
-  #social {
-    font-size: 0.6rem;
-    margin-left: 15px;
-    margin-top: 15px;
-  }
-
-  #social .dot {
-    width: 4px;
-    height: 4px;
-  }
-
-  .projects-box {
-    margin-left: 25px;
-  }
-
-  .projects-box {
-    margin-top: 20px;
-  }
-  .projects-box > h2 {
-    font-size: 0.9rem;
-    margin-bottom: 0px;
-  }
-
-  .pr-box {
-    height: 50px;
-  }
-
-  .pr-box h2 {
-    font-size: 0.7rem;
-  }
-
-  .pr-box p {
-    font-size: 0.7rem;
-  }
-
-  .contact-box {
-    margin-left: 35px;
-    margin-top: 20px;
-    margin-bottom: 0px;
-  }
-
-  .contact-box h2 {
-    font-size: 1.3rem;
-  }
-
-  .contact-box i {
-    font-size: 1rem;
-  }
-
-  .resume-box {
-    margin-left: 37px;
-    font-size: 1rem;
-    margin-top: 15px;
-  }
-
-  #header {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-}
-
-@media screen and (max-width: 380px) {
-  .loop-text-container {
-    font-size: 35px;
-    top: 20%;
+    top: 16%;
     letter-spacing: 0.2px;
   }
   #intro-text {
@@ -692,7 +619,7 @@ body {
 @media screen and (max-width: 330px) {
   .loop-text-container {
     font-size: 30px;
-    top: 18%;
+    top: 13%;
     letter-spacing: 0.2px;
   }
   #intro-text {
@@ -715,7 +642,6 @@ body {
   }
   .projects-box > h2 {
     font-size: 0.9rem;
-    margin-bottom: 0px;
   }
 
   .pr-box {
@@ -733,7 +659,6 @@ body {
   .contact-box {
     margin-left: 27px;
     margin-top: 20px;
-    margin-bottom: 0px;
   }
 
   .contact-box h2 {

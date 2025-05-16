@@ -30,3 +30,14 @@ document.addEventListener("mousemove", function (event) {
   mouseX = event.pageX;
   mouseY = event.pageY;
 });
+
+document.querySelectorAll(".pr-box").forEach((element) => {
+  element.addEventListener("click", () => {
+    const url = element.id;
+    if (url.startsWith("http")) {
+      window.open(url, "_blank");
+    } else {
+      console.error("Invalid URL in ID:", url);
+    }
+  });
+});
